@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html  xmlns="www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
+    </head>
+    <body>
+    <h3>Résultats de calcul des impots</h3>
+
+    <div>
+        <h2>Données</h2>
+        <p th:text="'Status matimonial:'+${impot.status}"></p>
+        <p th:text="'Nombre d\'enfant:'+${impot.nbrEnfant}"></p>
+        <p th:text="'Nombre d\'épouse:'+${impot.nbrEpouse}"></p>
+
+    </div>
+
+    <div>
+        <h1>Résultats</h1>
+        <p th:text="'Nombre de part:'+${impot.nbrPart}"></p>
+    </div>
+    </body>
+</html>

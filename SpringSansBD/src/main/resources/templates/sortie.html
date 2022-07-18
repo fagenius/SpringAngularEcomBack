@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html  xmlns="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>Résultats du traitement du Prêt</h3>
+
+<div>
+<h2>Données</h2>
+<p th:text="'Montant prêt:'+${pret.mpret}"></p>
+<p th:text="'Taux Annuel:'+${pret.tia}"></p>
+<p th:text="'Nombre années:'+${pret.na}"></p>
+</div>
+
+<div>
+<h1>Résultats</h1>
+<p th:text="'Montant mensuel:'+${pret.mmens}"></p>
+<p th:text="'Montant global remb.:'+${pret.mglobal}"></p>
+</div>
+</body>
+</html>

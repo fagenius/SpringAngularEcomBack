@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html  xmlns="www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
+    </head>
+    <body>
+        <h1>Formulaire de Saisie des données pour le calcul de l'impot</h1>
+        <form th:action="@{/traite}" th:object="${impot}" method="post">
+            <div>
+                <label>Status social</label>
+                <select th:field="*{status}">
+                    <option th:value="'M'" th:text="Marié"></option>
+                    <option th:value="'C'" th:text="Célibataire"></option>
+                </select>
+                <!--<div><input type="text" th:field="*{status}">
+                </div>-->
+            </div>
+            <div>
+                <label>Nombre d'enfant</label>
+                <div><input type="text" th:field="*{nbrEnfant}">
+                </div>
+            </div>
+            <div>
+                <label>Nombre d'épouse</label>
+                <div><input type="text" th:field="*{nbrEpouse}">
+                </div>
+            </div>
+            <div><input type="submit" value="Calculer">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+données:
+mpret
+na
+tia
+
+résultats:
+mmensuel
+mglobal
+
+formule:
+mmensuel = N/D
+N=mpret*tim
+tim=tia/1200
+D=1-1/(1+tim) à la puissance 12*na

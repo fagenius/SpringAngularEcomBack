@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  xmlns="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Formulaire de Saisie des données du prêt</h1>
+<form th:action="@{/traite}" th:object="${pret}" method="post">
+<div>
+<label>Montant Prêt</label>
+<div><input type="text" th:field="*{mpret}">
+</div>
+</div>
+
+<div>
+<label>Taux Annuel</label>
+<div><input type="text" th:field="*{tia}">
+</div>
+</div>
+
+<div>
+<label>Nombre années </label>
+<div><input type="text" th:field="*{na}">
+</div>
+</div>
+
+<div><input type="submit" value="Calculer">
+</div>
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<aside xmlns:th="http://www.w3.org/1999/xhtml">
+    <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu">
+            <li class="">
+                <a class="" href="index.html">
+                    <i class="icon_house_alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;" class="">
+                    <i class="icon_document_alt"></i>
+                    <span>Vehicles</span>
+                    <span class="menu-arrow arrow_carrot-right"></span>
+                </a>
+                <ul class="sub">
+                    <a class="btn btn-info" th:href="@{/vehicles}">Vehicle</a>
+                    <li><a class="btn btn-info" th:href="@{/vehiclemaintenances}">Maintenance</a></li>
+                    <li><a class="btn btn-info" th:href="@{/vehiclemovements}">Movement</a></li>
+                    <li><a class="btn btn-info" th:href="@{/vehiclehires}">Hire</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;" class="">
+                    <i class="icon_desktop"></i>
+                    <span>Parameters</span>
+                    <span class="menu-arrow arrow_carrot-right"></span>
+                </a>
+                <ul class="sub">
+                    <li><a class="btn btn-info" th:href="@{/vehiclemakes}">Vehicle Make</a></li>
+                    <li><a class="btn btn-info" th:href="@{/vehicletypes}">Vehicle Type</a></li>
+                    <li><a class="btn btn-info" th:href="@{/vehiclemodels}">Vehicle Modele</a></li>
+                    <li><a class="btn btn-info" th:href="@{/vehiclestatus}">Vehicle Status</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a href="javacript:;" class="">
+                    <i class="icon-table-l"></i>
+                    <span>People</span>
+                    <span class="menu-arrow arrow_carrot-right"></span>
+                </a>
+                <ul class="sub">
+                    <li><a class="btn btn-info" th:href="@{/employees}">Employee</a></li>
+                    <li><a class="btn btn-info" th:href="@{/clients}">Clients</a></li>
+                    <li><a class="btn btn-info" th:href="@{/suppliers}">Suppliers</a></li>
+                    <li><a class="btn btn-info" th:href="@{/contacts}">Contact</a></li>
+                    <li><a class="btn btn-info" th:href="@{/users}">User</a></li>
+                </ul>
+            </li>
+
+            <li class="sub-menu">
+                <a href="javascript:;" class="">
+                    <i class="icon_table"></i>
+                    <span>HR Setting</span>
+                    <span class="menu-arrow arrow_carrot-right"></span>
+                </a>
+                <ul class="sub">
+                    <li><a class="btn btn-info" th:href="@{/jobstitles}">Job Title</a></li>
+                    <li><a class="btn btn-info" th:href="@{/employeestype}">Employee Types</a></li>
+
+                </ul>
+            </li>
+
+            <li class="sub-menu ">
+                <a href="javascript:;" class="">
+                    <i class="icon_documents_alt"></i>
+                    <span>Accounts</span>
+                    <span class="menu-arrow arrow_carrot-right"></span>
+                </a>
+                <ul class="sub">
+                    <li><a class="btn btn-info" th:href="@{/invoices}">Invoice</a></li>
+                    <li><a class="btn btn-info" th:href="@{/invoicestatus}">Invoice Status Value</a></li>
+                </ul>
+            </li>
+
+            <li class="sub-menu ">
+                <a href="javascript:;" class="">
+                    <i class="icon_documents_alt"></i>
+                    <span>Globals</span>
+                    <span class="menu-arrow arrow_carrot-right"></span>
+                </a>
+                <ul class="sub">
+                    <li><a class="btn btn-info" th:href="@{/countries}">Countries</a></li>
+                    <li><a class="btn btn-info" th:href="@{/states}">States</a></li>
+                    <li><a class="btn btn-info" th:href="@{/locations}">Locations</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
